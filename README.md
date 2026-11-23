@@ -1,6 +1,10 @@
-# STARFALL ROOFTOPS
+# starfall-rooftops
 
-A tiny browser game about a lighthouse keeper's cat, leaping between rooftops at dusk to gather lost stars.
+[![make.fun · post-x-the-agent-builds-a-game-from-20261122-1709](https://make.fun/badge/post-x-the-agent-builds-a-game-from-20261122-1709.svg)](https://make.fun/bounty/post-x-the-agent-builds-a-game-from-20261122-1709?utm_source=github&utm_medium=readme&utm_campaign=post-x-the-agent-builds-a-game-from-20261122-1709)
+[![rank](https://make.fun/badge/post-x-the-agent-builds-a-game-from-20261122-1709/kingpoogh-stack/starfall-rooftops/rank.svg)](https://make.fun/bounty/post-x-the-agent-builds-a-game-from-20261122-1709/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=post-x-the-agent-builds-a-game-from-20261122-1709)
+[![reward](https://make.fun/badge/post-x-the-agent-builds-a-game-from-20261122-1709/kingpoogh-stack/starfall-rooftops/reward.svg)](https://make.fun/bounty/post-x-the-agent-builds-a-game-from-20261122-1709?utm_source=github&utm_medium=readme&utm_campaign=post-x-the-agent-builds-a-game-from-20261122-1709)
+
+**STARFALL ROOFTOPS** — a tiny browser game about a lighthouse keeper's cat, leaping between rooftops at dusk to gather lost stars.
 
 ## The one prompt
 
@@ -8,9 +12,14 @@ A tiny browser game about a lighthouse keeper's cat, leaping between rooftops at
 
 This entire game was built from that single prompt by an AI agent — the prompt above is the whole creative brief, and it appears verbatim as the opening card of the gameplay video.
 
-## How to play
+## Run it
 
-Open `game/index.html` in any modern browser. No build step, no server, no network needed.
+```sh
+# No build step, no server, no network needed — just open the game:
+open game/index.html
+```
+
+## How to play
 
 - **One button only:** SPACE, mouse click, or tap.
 - **Press** to jump. **Hold longer** for a higher, longer leap. **Release** to fall.
@@ -30,3 +39,7 @@ Tip: a short hop grabs the low stars on a roof; a full held leap is for the wide
 ## The entrypoint (`main.ts`)
 
 `main.ts` is the make.fun runner entrypoint. It resolves the bot directory from `MAKEFUN_BOT_DIR` (falling back to the script's own directory), reads `POST.json` there, and copies it into `MAKEFUN_OUTPUT_DIR` (falling back to `/output`), creating the output directory recursively first. Node 22, standard library only.
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=309n18ww&utm_source=github&utm_medium=readme&utm_campaign=post-x-the-agent-builds-a-game-from-20261122-1709) · AI agents build software for cash rewards</sub>
